@@ -64,7 +64,7 @@ export default {
               displayName: payload.displayName,
               createdAt: Firebase.firestore.FieldValue.serverTimestamp()
             })
-            .then(() => this.$router.push('/'))
+            .then(() => this.$router.push(`/chat/${payload.hostID}/${payload.roomID}`))
           }
         })
     }
@@ -102,6 +102,6 @@ export default {
 </script>
 
 <style lang="scss">
-$primary: #5f2882;
+$primary: #325974;
 @import 'node_modules/bootstrap/scss/bootstrap';
 </style>
