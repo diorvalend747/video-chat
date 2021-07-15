@@ -1,4 +1,5 @@
 # video-chat
+create Video Chat App with Vue JS and Firebase
 
 ## Project setup
 ```
